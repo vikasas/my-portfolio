@@ -20,7 +20,7 @@ const Contact = () => {
           <img
             src={pic}
             alt="Profile"
-            className="rounded-full w-40 h-40 sm:w-60 sm:h-60 lg:w-80 lg:h-80 object-cover"
+            className=" w-60 h-60 sm:w-60 sm:h-60 lg:w-80 lg:h-80 object-cover"
           />
         </div>
 
