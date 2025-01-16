@@ -9,7 +9,7 @@ const skills = [
   { name: "ReactJS", icon: <SiReact /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss /> },
   { name: "Figma", icon: <SiFigma /> },
-  // { name: "Spring Boot", icon: <SiSpringboot /> },
+  
 ];
 
 const Skills = () => {
