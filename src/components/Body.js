@@ -50,11 +50,11 @@ const Body = () => {
       </div>
 
       {/* Additional Sections */}
-      <div className="w-full px-4">
+      <div className="w-full ">
         <Helper />
       </div>
       
-      <div className="w-full mt-8">
+      <div className="w-full ">
         <Footer />
       </div>
     </div>
