@@ -10,16 +10,16 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-wrap justify-center md:justify-end space-x-6 text-sm">
-          <Link to="/" className="hover:text-hovercol">
+          <Link to="/" className="hover:text-smalltext">
             Home
           </Link>
-          <Link to="/about" className="hover:text-hovercol">
+          <Link to="/about" className="hover:text-smalltext">
             About
           </Link>
-          <Link to="/services" className="hover:text-hovercol">
+          <Link to="/services" className="hover:text-smalltext">
             Services
           </Link>
-          <Link to="/contact" className="hover:text-hovercol">
+          <Link to="/contact" className="hover:text-smalltext">
             Contact
           </Link>
         </div>

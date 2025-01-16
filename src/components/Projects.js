@@ -52,7 +52,7 @@ const Projects = () => {
 
     return (
         <div>
-        <div className="  w-full lg:w-full flex flex-col justify-start text-center lg:text-left">
+        <div className="  w-full lg:w-full lg:p-10 flex flex-col justify-start text-center lg:text-left">
             <h6 className="text-beige font-normal text-2xl">PROJECTS</h6>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2  gap-4 mt-4">
                 {project.map((proj, index) => (
