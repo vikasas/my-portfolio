@@ -19,7 +19,7 @@ const NewHelper = () =>{
       ];
       
     return(
-        <div className="lg:ml-20 w-full lg:w-2/3 flex flex-col justify-start text-center lg:text-left">
+        <div className=" w-full lg:w-full flex flex-col justify-start  text-left lg:text-left">
             <h6 className="text-2xl font-normal text-beige">Intrests</h6>
             <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4">
                 {service.map((serv , index) =>(
