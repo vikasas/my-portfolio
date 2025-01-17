@@ -25,7 +25,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Form and Social Links */}
-        <div className="lg:ml-20 w-full lg:w-2/3 flex flex-col justify-start text-center lg:text-left">
+        <div className="lg:ml-20 w-full lg:w-1/2 flex flex-col justify-start text-center lg:text-left">
           <div className="bg-container border-2 border-bordercol p-5 sm:p-10 rounded-md shadow-lg">
             <h6 className="text-sm font-normal text-smalltext">Contact</h6>
             <p className="text-3xl sm:text-4xl lg:text-5xl font-light mt-3">Let's get in touch</p>
@@ -53,15 +53,15 @@ const Contact = () => {
           </div>
 
           {/* Social Media Links */}
-          <div className="mt-10">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="mt-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
               {socialmedia.map((social, index) => (
                 <a
                   key={index}
                   href={social.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-start p-4 bg-container border border-bordercol hover:bg-hovercol hover:opacity-90 hover:border-beige transition rounded-md"
+                  className="flex items-center justify-start p-4 bg-container border border-bordercol hover:bg-hovercol hover:opacity-90 hover:border-beige transition "
                 >
                   <span className="text-lg">{social.icon}</span>
                   <span className="ml-2 text-sm lg:text-base">{social.name}</span>

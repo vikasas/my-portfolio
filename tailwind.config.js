@@ -19,7 +19,7 @@ module.exports = {
         sans: ['Poppins', 'sans-serif'], 
       },
       animation: {
-        slide: "slide 16s linear infinite",
+        slide: "slide 22s linear infinite",
       },
       keyframes: {
         slide: {
