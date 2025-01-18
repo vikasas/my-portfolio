@@ -32,24 +32,16 @@ const Body = () => {
             Vikas, a passionate Developer studying final year BE at GM Institute of Technology
           </p>
         </div>
-
-        {/* Skills Section */}
-        <div className="mt-8 w-full px-4">
+        <div className="mt-8 w-full ">
           <Skills />
         </div>
-
-        {/* Helper Component */}
         <div className="w-full mt-8 px-4">
           <NewHelper />
         </div>
-
-        {/* Projects Section */}
-        <div className="w-full mt-12 px-4">
+        <div className="w-full mt-12 ">
           <Projects />
         </div>
       </div>
-
-      {/* Additional Sections */}
       <div className="w-full ">
         <Helper />
       </div>

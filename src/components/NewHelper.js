@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const NewHelper = () =>{
 
     const service = [
@@ -27,6 +28,7 @@ const NewHelper = () =>{
                         <p className="text-smalltext">{serv.no}</p>
                         <p className="text-beige text-2xl font-normal">{serv.name}</p>
                         <p className="text-smalltext text-sm font-normal mt-3">{serv.info}</p>
+                        <Link to="/about"><button className="lg:mt-5 md:mt-5 mt-4 bg-btnbg px-3 py-1 lg:px-6 lg:py-2 md:px-6 md:py-2 font-normal  text-btntextcol hover:opacity-80">Know More..</button></Link>
                         </div>
                 ))}
             </div>

@@ -16,7 +16,7 @@ const skills = [
 const Skills = () => {
   return (
     <div className="w-[90vw] flex justify-center">
-      <div className="bg-background w-11/12 md:w-4/5 lg:w-3/5 text-beige py-10">
+      <div className="bg-background w-3/4 md:w-4/5 lg:w-3/5 text-beige py-10">
         <div className="overflow-hidden relative">
           <div className="flex animate-slide whitespace-nowrap">
             {skills.map((skill, index) => (

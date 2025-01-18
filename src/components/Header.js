@@ -9,8 +9,8 @@ const Header = () => {
   };
 
   return (
-    <div className="flex justify-center">
-      <div className="flex w-11/12 md:w-2/3 lg:w-1/3 z-20 h-16 justify-between md:justify-center items-center gap-x-8 md:bg-navbg  lg:bg-navbg mt-8 md:border-2 md:border-bordercol lg:border-2 lg:border-bordercol sticky top-0">
+    <div className="flex sticky top-0 justify-center z-50">
+      <div className="flex w-11/12 md:w-2/3 lg:w-1/3 z-20 h-16 justify-between md:justify-center items-center gap-x-8 md:bg-navbg  lg:bg-navbg mt-8 md:border-2 md:border-bordercol lg:border-2 lg:border-bordercol ">
         <div>
           <p className="text-beige hidden md:block font-normal text-xl cursor-pointer">
             <Link to="/">Vikas.</Link>
