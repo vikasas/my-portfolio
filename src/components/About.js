@@ -19,7 +19,7 @@ const About = () => {
       <div className="w-screen h-auto bg-background text-beige flex flex-col lg:flex-row justify-center items-start p-5 lg:p-10 mt-10">
         <div className="w-full lg:w-1/2 flex justify-center mb-5 lg:mb-0">
           <div className="h-auto flex justify-center">
-            <img src={pic} alt="Profile" className="w-60 h-60 sm:w-80 sm:h-80 lg:w-96 lg:h-96 " />
+            <img src={pic} alt="Profile" className="w-60 h-60 sm:w-80 sm:h-80 md:h-80 md:w-80 lg:w-96 lg:h-96 " />
           </div>
         </div>
         <div className="ml-0 lg:ml-10 w-full lg:w-3/4 flex flex-col justify-start text-center lg:text-left">

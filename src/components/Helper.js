@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Helper = () =>{
     return(
         <div className="">
-        <div className="w-full h-[70vh] sm:h-[70vh] md:h-[80vh] lg:h-screen bg-container flex justify-center items-center">
+        <div className="w-full h-[70vh]  md:h-[70vh] lg:h-screen bg-container flex justify-center items-center">
             <div className="w-3/4 h-4/5 p-4 lg:p-2 lg:w-3/4  lg:h-1/2 md:p-2 md:w-3/4  md:h-1/2 text-center">
                 <p className="sm:text-8xl lg:text-8xl text-5xl text-beige font-light ">Hey, wanna Know </p>
                 <p className="sm:text-8xl lg:text-8xl text-5xl text-beige font-light mt-1 lg:mt-6">Me More</p>
