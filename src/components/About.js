@@ -24,8 +24,8 @@ const About = () => {
         </div>
         <div className="ml-0 lg:ml-10 w-full lg:w-3/4 flex flex-col justify-start text-center lg:text-left">
           <div>
-            <h1 className="text-4xl sm:text-6xl lg:text-8xl font-semibold mb-2">Vikas AS</h1>
-            <h2 className="text-xl sm:text-2xl font-light text-smalltext">Passionate Web Developer</h2>
+            <h1 className="text-4xl sm:text-6xl lg:text-8xl font-light mb-2">Vikas AS</h1>
+            <h2 className="text-sm sm:text-2xl font-light text-smalltext">Passionate Web Developer</h2>
           </div>
           <div className="mt-6 font-normal text-base leading-relaxed bg-container p-5 sm:p-10 border-2 border-bordercol">
             <p>

@@ -1,23 +1,24 @@
 import { Link } from "react-router-dom";
 const NewHelper = () =>{
 
-    const service = [
-        {
-            no:"01",
-          name: "Web Design",
-          info: "We create aesthetically pleasing and user-friendly website designs that help businesses engage their customers and build a strong online presence. Responsive and creative designs tailored to your brand."
-        },
-        {
-            no:"02",
-          name: "Web Development",
-          info: "Our web development services include building fast, scalable, and secure websites using the latest technologies. We focus on creating responsive, performance-optimized, and fully functional websites."
-        },
-        {
-            no:"03",
-          name: "Problem Solving",
-          info: "We help businesses overcome challenges by identifying issues and providing innovative, effective solutions. Whether it's optimizing processes or resolving technical problems, our team works to deliver impactful solutions."
-        }
-      ];
+  const service = [
+    {
+      no: "01",
+      name: "Web Design",
+      info: "Focus on designing modern, visually appealing, and user-centric websites that stand out. Our goal is  to create responsive designs, blending creativity with functionality, tailored for academic projects and beyond."
+    },
+    {
+      no: "02",
+      name: "Web Development",
+      info: "Learn to build dynamic and robust web applications with hands-on experience in the latest technologies. From responsive layouts to optimized performance."
+    },
+    {
+      no: "03",
+      name: "Problem Solving",
+      info: "Dive deep into problem-solving with a focus on data structures and algorithms. With experience solving 300+ DSA questions  and building the confidence to tackle complex problems efficiently."
+    }
+  ];
+  
       
     return(
         <div className=" w-full lg:w-full flex flex-col justify-start  text-left lg:text-left">

@@ -21,11 +21,11 @@ const project = [
         name: "TO-Do List",
         stacks: "Tech Stacks: HTML, CSS, JavaScript",
     },
-    {
-        photo: mpic,
-        name: "E-Commerce",
-        stacks: "Tech Stacks: ReactJS, TailwindCSS, Java, SpringBoot",
-    },
+    // {
+    //     photo: mpic,
+    //     name: "E-Commerce",
+    //     stacks: "Tech Stacks: ReactJS, TailwindCSS, Java, SpringBoot",
+    // },
 ];
 
 const Projects = () => {

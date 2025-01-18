@@ -3,13 +3,14 @@ import { SiHtml5, SiCss3, SiJavascript, SiReact, SiTailwindcss, SiFigma, SiMysql
 
 const skills = [
   { name: "Java", icon: <FaJava /> },
-  { name: "HTML", icon: <SiHtml5 /> },
-  { name: "CSS", icon: <SiCss3 /> },
   { name: "JavaScript", icon: <SiJavascript /> },
   { name: "ReactJS", icon: <SiReact /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss /> },
   { name: "Figma", icon: <SiFigma /> },
   { name: "Mysql", icon: <SiMysql/> },
+  { name: "HTML", icon: <SiHtml5 /> },
+  { name: "CSS", icon: <SiCss3 /> },
+  
   
 ];
 
@@ -25,7 +26,7 @@ const Skills = () => {
                 className="flex items-center gap-4 px-8 py-8 text-base md:text-lg font-semibold"
               >
                 <span className="text-3xl sm:text-4xl">{skill.icon}</span>
-                <span className="hidden sm:block">{skill.name}</span>
+                <span className="">{skill.name}</span>
               </div>
             ))}
             {skills.map((skill, index) => (

@@ -1,3 +1,5 @@
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import pic from "../pic2.png";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
@@ -12,6 +14,23 @@ const socialmedia = [
 ];
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_m53wxgs", "template_i3pq006", form.current, "tJzIypbSfU0kzdNXp")
+      .then(
+        () => {
+          alert("Message sent successfully!");
+        },
+        (error) => {
+          alert("Message failed to send: " + error.text);
+        }
+      );
+  };
+
   return (
     <div>
       <div className="w-full bg-background text-beige flex flex-col lg:flex-row justify-center items-start p-5 sm:p-10 mt-10 space-y-10 lg:space-y-0">
@@ -20,7 +39,7 @@ const Contact = () => {
           <img
             src={pic}
             alt="Profile"
-            className=" w-60 h-60 sm:w-60 sm:h-60 lg:w-80 lg:h-80 object-cover"
+            className="w-60 h-60 sm:w-60 sm:h-60 lg:w-80 lg:h-80 object-cover"
           />
         </div>
 
@@ -31,25 +50,34 @@ const Contact = () => {
             <p className="text-3xl sm:text-4xl lg:text-5xl font-light mt-3">Let's get in touch</p>
 
             {/* Form */}
-            <input
-              type="text"
-              placeholder="Name"
-              className="bg-hovercol text-smalltext p-3 mt-5 w-full rounded-md focus:outline-none focus:ring-2 focus:ring-bordercol"
-            />
-            <input
-              type="text"
-              placeholder="Email"
-              className="bg-hovercol text-smalltext p-3 mt-5 w-full rounded-md focus:outline-none focus:ring-2 focus:ring-bordercol"
-            />
-            <textarea
-              placeholder="Your Message"
-              className="bg-hovercol text-smalltext p-3 mt-5 w-full rounded-md focus:outline-none focus:ring-2 focus:ring-bordercol"
-            ></textarea>
-            <a href="mailto:your-vikasas202002@gmail.com">
-              <button className="bg-btnbg text-btntextcol w-full p-3 mt-5 rounded-md hover:opacity-80">
+            <form ref={form} onSubmit={sendEmail}>
+              <input
+                type="text"
+                name="user_name"
+                placeholder="Name"
+                className="bg-hovercol text-smalltext p-3 mt-5 w-full rounded-md focus:outline-none focus:ring-2 focus:ring-bordercol"
+                required
+              />
+              <input
+                type="email"
+                name="user_email"
+                placeholder="Email"
+                className="bg-hovercol text-smalltext p-3 mt-5 w-full rounded-md focus:outline-none focus:ring-2 focus:ring-bordercol"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                className="bg-hovercol text-smalltext p-3 mt-5 w-full rounded-md focus:outline-none focus:ring-2 focus:ring-bordercol"
+                required
+              ></textarea>
+              <button
+                type="submit"
+                className="bg-btnbg text-btntextcol w-full p-3 mt-5 rounded-md hover:opacity-80"
+              >
                 Send Message
               </button>
-            </a>
+            </form>
           </div>
 
           {/* Social Media Links */}
@@ -61,7 +89,7 @@ const Contact = () => {
                   href={social.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-start p-4 bg-container border border-bordercol hover:bg-hovercol hover:opacity-90 hover:border-beige transition "
+                  className="flex items-center justify-start p-4 bg-container border border-bordercol hover:bg-hovercol hover:opacity-90 hover:border-beige transition"
                 >
                   <span className="text-lg">{social.icon}</span>
                   <span className="ml-2 text-sm lg:text-base">{social.name}</span>
