@@ -9,7 +9,7 @@ const socialmedia = [
   { icon: <FaLinkedin />, name: "LinkedIn", link: "https://www.linkedin.com/in/vikas-as-006128284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
   { icon: <FaTwitter />, name: "Twitter", link: "https://www.twitter.com" },
   { icon: <SiLeetcode />, name: "LeetCode", link: "https://leetcode.com/u/vikas_as18/" },
-  { icon: "", name: "Resume", link: "https://drive.google.com/file/d/1P7tUNSRALzkIiQ1HGhkHQlBFE7Bvfb1J/view?usp=drivesdk " },
+  { icon: "", name: "Resume", link: "" },
   { icon: <FaInstagram />, name: "Instagram", link: "https://www.instagram.com/vikaaas_as?igsh=MWp5dHJ6MDRsZHhzYg==" },
 ];
 
