@@ -4,8 +4,14 @@ import Projects from './Projects';
 import Helper from './Helper';
 import Footer from './Footer';
 import NewHelper from './NewHelper';
+import AOS from "aos";
+import "aos/dist/aos.css"
+import { useEffect } from 'react';
 
 const Body = () => {
+  useEffect(() => {
+    AOS.init({duration:1200})
+  })
   return (
     <div>
       {/* Main Container */}
@@ -22,13 +28,13 @@ const Body = () => {
 
         {/* Text Section */}
         <div className="text-center px-4">
-          <p className="text-beige text-4xl sm:text-5xl lg:text-6xl font-light leading-tight">
+          <p className="text-beige text-4xl sm:text-5xl lg:text-6xl font-light leading-tight" data-aos="fade-in">
             Web Designer
           </p>
-          <p className="text-beige text-4xl sm:text-5xl lg:text-6xl font-light leading-tight mt-2">
+          <p className="text-beige text-4xl sm:text-5xl lg:text-6xl font-light leading-tight mt-2"data-aos="fade-in">
             & Developer
           </p>
-          <p className="text-smalltext text-base sm:text-lg lg:text-xl font-normal mt-4">
+          <p className="text-smalltext text-base sm:text-lg lg:text-xl font-normal mt-4"data-aos="fade-in">
             Vikas, a passionate Developer studying final year BE at GM Institute of Technology
           </p>
         </div>

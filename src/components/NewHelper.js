@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
+import { useEffect } from "react";
 const NewHelper = () =>{
-
+  useEffect(() =>{
+    AOS.init({duration:1200})
+  })
   const service = [
     {
       no: "01",
@@ -25,7 +30,7 @@ const NewHelper = () =>{
             <h6 className="text-2xl font-normal text-beige">Intrests</h6>
             <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4">
                 {service.map((serv , index) =>(
-                    <div key={index} className="bg-container border border-bordercol mt-6 p-10 md:p-14 lg:p-14 scale-95 hover:scale-100 transition-all duration-300 ease-in-out ">
+                    <div key={index} data-aos="fade-up" className="bg-container border border-bordercol mt-6 p-10 md:p-14 lg:p-14 scale-95 hover:scale-100 transition-all duration-300 ease-in-out ">
                         <p className="text-smalltext">{serv.no}</p>
                         <p className="text-beige text-2xl font-normal">{serv.name}</p>
                         <p className="text-smalltext text-sm font-normal mt-3">{serv.info}</p>

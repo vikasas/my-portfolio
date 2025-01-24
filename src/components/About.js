@@ -4,6 +4,7 @@ import { SiLeetcode } from "react-icons/si";
 import Helper from "./Helper";
 import Footer from "./Footer";
 
+
 const socialmedia = [
   { icon: <FaInstagram />, name: "Instagram", link: "https://www.instagram.com/vikaaas_as?igsh=MWp5dHJ6MDRsZHhzYg==" },
   { icon: <FaLinkedin />, name: "LinkedIn", link: "https://www.linkedin.com/in/vikas-as-006128284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
@@ -14,6 +15,7 @@ const socialmedia = [
 ];
 
 const About = () => {
+  
   return (
     <div>
       <div className="w-screen h-auto bg-background text-beige flex flex-col lg:flex-row justify-center items-start p-5 lg:p-10 mt-10">
