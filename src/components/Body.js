@@ -34,14 +34,14 @@ const Body = () => {
           <p className="text-beige text-4xl sm:text-5xl lg:text-6xl font-light leading-tight mt-2"data-aos="fade-in">
             & Developer
           </p>
-          <p className="text-smalltext text-base sm:text-lg lg:text-xl font-normal mt-4"data-aos="fade-in">
+          <p className="text-smalltext text-base sm:text-lg lg:text-xl font-normal mt-4" data-aos="fade-in">
             Vikas, a passionate Developer studying final year BE at GM Institute of Technology
           </p>
         </div>
         <div className="mt-8 w-full ">
           <Skills />
         </div>
-        <div className="w-full mt-8 px-4">
+        <div className="w-full mt-8 px-4" >
           <NewHelper />
         </div>
         <div className="w-full mt-12 ">

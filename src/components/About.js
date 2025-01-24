@@ -3,7 +3,9 @@ import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import Helper from "./Helper";
 import Footer from "./Footer";
-
+import AOS from "aos";
+import "aos/dist/aos.css"; 
+import { useEffect } from "react";
 
 const socialmedia = [
   { icon: <FaInstagram />, name: "Instagram", link: "https://www.instagram.com/vikaaas_as?igsh=MWp5dHJ6MDRsZHhzYg==" },
@@ -15,18 +17,20 @@ const socialmedia = [
 ];
 
 const About = () => {
-  
+  useEffect(()=>{
+    AOS.init({duration:1200})
+  })
   return (
     <div>
       <div className="w-screen h-auto bg-background text-beige flex flex-col lg:flex-row justify-center items-start p-5 lg:p-10 mt-10">
-        <div className="w-full lg:w-1/2 flex justify-center mb-5 lg:mb-0">
-          <div className="h-auto flex justify-center">
+        <div className="w-full lg:w-1/2 flex justify-center mb-5 lg:mb-0 lg:sticky top-10">
+          <div className="h-auto flex justify-center ">
             <img src={pic} alt="Profile" className="w-60 h-60 sm:w-80 sm:h-80 md:h-80 md:w-80 lg:w-96 lg:h-96 " />
           </div>
         </div>
         <div className="ml-0 lg:ml-10 w-full lg:w-3/4 flex flex-col justify-start text-center lg:text-left">
           <div>
-            <h1 className="text-4xl sm:text-6xl lg:text-8xl font-light mb-2">Vikas AS</h1>
+            <h1 className="text-4xl sm:text-6xl lg:text-8xl font-light mb-2" >Vikas AS</h1>
             <h2 className="text-sm sm:text-2xl font-light text-smalltext">Passionate Web Developer</h2>
           </div>
           <div className="mt-6 font-normal text-base leading-relaxed bg-container p-5 sm:p-10 border-2 border-bordercol">
@@ -54,6 +58,7 @@ const About = () => {
                 <a
                   key={index}
                   href={social.link}
+                  data-aos="fade-in"
                   className="cursor-pointer flex items-center justify-start p-4 bg-container border border-bordercol hover:bg-hovercol hover:opacity-1 hover:border-beige transition"
                 >
                   <span>{social.icon}</span>

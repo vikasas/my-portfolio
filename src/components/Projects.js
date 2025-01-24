@@ -33,7 +33,7 @@ const project = [
 
 const Projects = () => { // Add this line to define the functional component properly
     useEffect(() =>{
-        AOS.init({duration:1200})
+        AOS.init({duration:1400})
     })
     return (
         <div>
@@ -42,8 +42,9 @@ const Projects = () => { // Add this line to define the functional component pro
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 mt-4">
                     {project.map((proj, index) => (
                         <div
+                        data-aos="fade-in"
                             key={index}
-                            className="project-item border-1 border-bordercol bg-container p-4 rounded-lg shadow-md scale-95 hover:scale-100 transition-all duration-300 ease-in-out" data-aos="fade-up"
+                            className="project-item border-1 border-bordercol bg-container p-4 rounded-lg shadow-md scale-95 hover:scale-100 transition-all duration-300 ease-in-out" 
                         >
                             <div className="mb-4">
                                 <img

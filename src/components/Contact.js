@@ -4,6 +4,9 @@ import pic from "../pic2.png";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import Footer from "./Footer";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
+import { useEffect } from "react";
 
 const socialmedia = [
   { icon: <FaInstagram />, name: "Instagram", link: "https://www.instagram.com/vikaaas_as?igsh=MWp5dHJ6MDRsZHhzYg==" },
@@ -15,6 +18,9 @@ const socialmedia = [
 
 const Contact = () => {
   const form = useRef();
+  useEffect(() => {
+    AOS.init({duration:1200})
+  })
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -89,6 +95,7 @@ const Contact = () => {
                   href={social.link}
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-aos="fade-in"
                   className="flex items-center justify-start p-4 bg-container border border-bordercol hover:bg-hovercol hover:opacity-90 hover:border-beige transition"
                 >
                   <span className="text-lg">{social.icon}</span>
