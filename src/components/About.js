@@ -40,14 +40,14 @@ const About = () => {
               demonstrated dedication and a strong grasp of both academics and practical problem-solving.
             </p>
             <br />
-            <p>
+            <p data-aos="fade-in">
               I thrive on building responsive, user-friendly, and visually appealing web applications. My journey in
               technology has been fueled by curiosity and a drive to turn innovative ideas into reality. From designing
               sleek user interfaces to optimizing functionality, I enjoy the challenge of creating digital solutions
               that make an impact.
             </p>
             <br />
-            <p>
+            <p data-aos="fade-in">
               Beyond my love for coding, I am eager to learn, adapt, and grow as a professional in the ever-evolving
               tech landscape. Let's connect and create something amazing together!
             </p>
@@ -70,33 +70,33 @@ const About = () => {
 
           <div className="overflow-y-scroll h-60 sm:h-60 lg:h-80 cursor-pointer mt-4 font-normal text-base leading-relaxed bg-container p-5 sm:p-10 border-2 border-bordercol">
             <h6 className="text-smalltext">SKILLS</h6>
-            <p className="mt-6 text-xl font-normal">Java</p> <hr className="border-skiltextcol mt-5" />
-            <p className="mt-3 text-xl font-normal">DSA</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-3 text-xl font-normal">DBMS</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-3 text-xl font-normal">SQL</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-3 text-xl font-normal">HTML & CSS</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-3 text-xl font-normal">JavaScript</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-3 text-xl font-normal">ReactJS</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-3 text-xl font-normal">Tailwindcss</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-3 text-xl font-normal">Web Design</p> 
+            <p className="mt-6 text-xl font-normal" data-aos="fade-in">Java</p> <hr className="border-skiltextcol mt-5" />
+            <p className="mt-3 text-xl font-normal" data-aos="fade-in">DSA</p> <hr className="border-skiltextcol mt-3" />
+            <p className="mt-3 text-xl font-normal" data-aos="fade-in">DBMS</p> <hr className="border-skiltextcol mt-3" />
+            <p className="mt-3 text-xl font-normal" data-aos="fade-in">SQL</p> <hr className="border-skiltextcol mt-3" />
+            <p className="mt-3 text-xl font-normal" data-aos="fade-in">HTML & CSS</p> <hr className="border-skiltextcol mt-3" />
+            <p className="mt-3 text-xl font-normal" >JavaScript</p> <hr className="border-skiltextcol mt-3" />
+            <p className="mt-3 text-xl font-normal" d>ReactJS</p> <hr className="border-skiltextcol mt-3" />
+            <p className="mt-3 text-xl font-normal" >Tailwindcss</p> <hr className="border-skiltextcol mt-3" />
+            <p className="mt-3 text-xl font-normal" >Web Design</p> 
             {/* <p className="mt-3 text-xl font-normal">SpringBoot</p> */}
           </div>
           <div className="cursor-pointer mt-4 font-normal text-base leading-relaxed bg-container p-5 sm:p-10 border-2 border-bordercol">
             <h6 className="text-smalltext">Education</h6>
             <div className="flex flex-col gap-3 sm:gap-5">
               <div className="flex flex-col sm:flex-row justify-between mt-3">
-                <p className="text-xl font-normal">GM Institute of Technology</p>
-                <p className="text-xl font-normal">8.52 CGPA</p>
+                <p className="text-xl font-normal" data-aos="fade-in">GM Institute of Technology</p>
+                <p className="text-xl font-normal" data-aos="fade-in">8.52 CGPA</p>
               </div>
               <hr className="border-skiltextcol" />
               <div className="flex flex-col sm:flex-row justify-between mt-3">
-                <p className="text-xl font-normal">Siddaganga PU Science College</p>
-                <p className="text-xl font-normal">86%</p>
+                <p className="text-xl font-normal" data-aos="fade-in">Siddaganga PU Science College</p>
+                <p className="text-xl font-normal" data-aos="fade-in">86%</p>
               </div>
               <hr className="border-skiltextcol" />
               <div className="flex flex-col sm:flex-row justify-between mt-3">
-                <p className="text-xl font-normal">Bapuji Higher Primary English Medium CBSE School</p>
-                <p className="text-xl font-normal">78.6%</p>
+                <p className="text-xl font-normal" data-aos="fade-in">Bapuji Higher Primary English Medium CBSE School</p>
+                <p className="text-xl font-normal" data-aos="fade-in">78.6%</p>
               </div>
               <hr className="border-skiltextcol" />
             </div>
