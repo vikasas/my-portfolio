@@ -38,7 +38,7 @@ const Projects = () => { // Add this line to define the functional component pro
     return (
         <div>
             <div className="w-full lg:w-full md:p-10 lg:p-20 p-3 flex flex-col justify-start text-center lg:text-left">
-                <h6 className="text-beige font-normal text-2xl">PROJECTS</h6>
+                <h6 className="text-beige font-ballet tracking-wide text-2xl">PROJECTS</h6>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 mt-4">
                     {project.map((proj, index) => (
                         <div
@@ -53,8 +53,8 @@ const Projects = () => { // Add this line to define the functional component pro
                                     className="w-full lg:h-80 md:h-80 h-60 object-cover rounded-lg"
                                 />
                             </div>
-                            <div className="text-xl text-beige font-normal mb-2">{proj.name}</div>
-                            <div className="text-base text-smalltext">{proj.stacks}</div>
+                            <div className="text-xl text-beige tracking-wider font-ballet mb-2">{proj.name}</div>
+                            <div className="text-base text-smalltext tracking-wider font-small">{proj.stacks}</div>
                         </div>
                     ))}
                 </div>

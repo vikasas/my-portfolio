@@ -30,10 +30,10 @@ const About = () => {
         </div>
         <div className="ml-0 lg:ml-10 w-full lg:w-3/4 flex flex-col justify-start text-center lg:text-left">
           <div>
-            <h1 className="text-4xl sm:text-6xl lg:text-8xl font-light mb-2" >Vikas AS</h1>
-            <h2 className="text-sm sm:text-2xl font-light text-smalltext">Passionate Web Developer</h2>
+            <h1 className="text-4xl sm:text-6xl lg:text-8xl font-light font-ballet mb-2" >Vikas AS</h1>
+            <h2 className="text-sm sm:text-2xl font-light font-small text-smalltext">Passionate Web Developer</h2>
           </div>
-          <div className="mt-6 font-normal text-base leading-relaxed bg-container p-5 sm:p-10 border-2 border-bordercol">
+          <div className="mt-6 font-small text-base tracking-wider font-light leading-relaxed bg-container p-5 sm:p-10 border-2 border-bordercol">
             <p>
               Hi, I'm <strong>Vikas AS</strong>, a passionate and ambitious web developer currently in my final year at{" "}
               <strong>GM Institute of Technology</strong>. With a CGPA of <strong>8.52</strong>, I have consistently
@@ -59,7 +59,7 @@ const About = () => {
                   key={index}
                   href={social.link}
                   data-aos="fade-in"
-                  className="cursor-pointer flex items-center justify-start p-4 bg-container border border-bordercol hover:bg-hovercol hover:opacity-1 hover:border-beige transition"
+                  className="cursor-pointer flex items-center justify-start p-4 font-small tracking-wider bg-container border border-bordercol hover:bg-hovercol hover:opacity-1 hover:border-beige transition"
                 >
                   <span>{social.icon}</span>
                   <span className="ml-2">{social.name}</span>
@@ -68,7 +68,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="overflow-y-scroll h-60 sm:h-60 lg:h-80 cursor-pointer mt-4 font-normal text-base leading-relaxed bg-container p-5 sm:p-10 border-2 border-bordercol">
+          <div className="overflow-y-scroll font-small tracking-wide h-60 sm:h-60 lg:h-80 cursor-pointer mt-4 font-normal text-base leading-relaxed bg-container p-5 sm:p-10 border-2 border-bordercol">
             <h6 className="text-smalltext">SKILLS</h6>
             <p className="mt-6 text-xl font-normal" data-aos="fade-in">Java</p> <hr className="border-skiltextcol mt-5" />
             <p className="mt-3 text-xl font-normal" data-aos="fade-in">DSA</p> <hr className="border-skiltextcol mt-3" />
@@ -81,7 +81,7 @@ const About = () => {
             <p className="mt-3 text-xl font-normal" >Web Design</p> 
             {/* <p className="mt-3 text-xl font-normal">SpringBoot</p> */}
           </div>
-          <div className="cursor-pointer mt-4 font-normal text-base leading-relaxed bg-container p-5 sm:p-10 border-2 border-bordercol">
+          <div className="cursor-pointer mt-4 font-small tracking-wide text-base leading-relaxed bg-container p-5 sm:p-10 border-2 border-bordercol">
             <h6 className="text-smalltext">Education</h6>
             <div className="flex flex-col gap-3 sm:gap-5">
               <div className="flex flex-col sm:flex-row justify-between mt-3">

@@ -16,7 +16,10 @@ module.exports = {
         btntextcol :'rgb(29, 30, 31)',
       },
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'], 
+        small: ['Roboto', 'serif'], 
+        ballet: ['Ballet', 'serif'], 
+        name: ["Pinyon Script", 'serif'],
+        popins :['Poppins', 'serif'],
       },
       animation: {
         slide: "slide 22s linear infinite",

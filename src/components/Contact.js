@@ -52,8 +52,8 @@ const Contact = () => {
         {/* Contact Form and Social Links */}
         <div className="lg:ml-20 w-full lg:w-1/2 flex flex-col justify-start text-center lg:text-left">
           <div className="bg-container border-2 border-bordercol p-5 sm:p-10 rounded-md shadow-lg">
-            <h6 className="text-sm font-normal text-smalltext">Contact</h6>
-            <p className="text-3xl sm:text-4xl lg:text-5xl font-light mt-3">Let's get in touch</p>
+            <h6 className="text-sm font-normal text-smalltext font-small tracking-wider">Contact</h6>
+            <p className="text-3xl sm:text-4xl lg:text-5xl font-light mt-3 font-ballet tracking-wide">Let's get in touch</p>
 
             {/* Form */}
             <form ref={form} onSubmit={sendEmail}>
@@ -79,7 +79,7 @@ const Contact = () => {
               ></textarea>
               <button
                 type="submit"
-                className="bg-btnbg text-btntextcol w-full p-3 mt-5 rounded-md hover:opacity-80"
+                className="bg-btnbg text-btntextcol w-full font-small p-3 mt-5 rounded-md hover:opacity-80"
               >
                 Send Message
               </button>
@@ -96,7 +96,7 @@ const Contact = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   data-aos="fade-in"
-                  className="flex items-center justify-start p-4 bg-container border border-bordercol hover:bg-hovercol hover:opacity-90 hover:border-beige transition"
+                  className="flex items-center justify-start font-small tracking-wider p-4 bg-container border border-bordercol hover:bg-hovercol hover:opacity-90 hover:border-beige transition"
                 >
                   <span className="text-lg">{social.icon}</span>
                   <span className="ml-2 text-sm lg:text-base">{social.name}</span>

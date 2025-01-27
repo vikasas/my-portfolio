@@ -26,7 +26,7 @@ const Skills = () => {
                 className="flex items-center gap-4 px-8 py-8 text-base md:text-lg font-semibold"
               >
                 <span className="text-3xl sm:text-4xl">{skill.icon}</span>
-                <span className="">{skill.name}</span>
+                <span className="tracking-wider font-popins">{skill.name}</span>
               </div>
             ))}
             {skills.map((skill, index) => (

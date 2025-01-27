@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -7,17 +9,19 @@ const Header = () => {
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
-
+  useEffect(() => {
+    AOS.init({duration:2000})
+  })
   return (
     <div className="flex sticky top-0 justify-center z-50">
-      <div className="flex w-11/12 md:w-2/3 lg:w-1/3 z-20 h-16 justify-between md:justify-center items-center gap-x-8 md:bg-navbg  lg:bg-navbg mt-8 md:border-2 md:border-bordercol lg:border-2 lg:border-bordercol ">
+      <div className="flex  w-11/12 md:w-2/3 lg:w-1/3 z-20 h-16 justify-between md:justify-center items-center gap-x-8 md:bg-navbg  lg:bg-navbg mt-8 md:border-2 md:border-bordercol lg:border-2 lg:border-bordercol ">
         <div>
-          <p className="text-beige hidden md:block font-normal text-xl cursor-pointer">
+          <p className="text-beige font-name hidden md:block  text-xl cursor-pointer" data-aos="fade-in">
             <Link to="/">Vikas.</Link>
           </p>
         </div>
         <div className="hidden md:block">
-          <ul className="flex gap-x-4 items-center cursor-pointer">
+          <ul className="flex gap-x-4 items-center tracking-wide font-small cursor-pointer">
             <li className="relative group text-beige text-sm tracking-wide">
               <Link to="/">
                 HOME

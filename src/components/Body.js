@@ -28,13 +28,13 @@ const Body = () => {
 
         {/* Text Section */}
         <div className="text-center px-4">
-          <p className="text-beige text-4xl sm:text-5xl lg:text-6xl font-light leading-tight" data-aos="fade-in">
+          <p className="text-beige text-4xl sm:text-5xl lg:text-6xl font-ballet font-light tracking-wider leading-tight" data-aos="fade-in">
             Web Designer
           </p>
-          <p className="text-beige text-4xl sm:text-5xl lg:text-6xl font-light leading-tight mt-2"data-aos="fade-in">
+          <p className="text-beige text-4xl sm:text-5xl lg:text-6xl font-light tracking-wider font-ballet leading-tight mt-2"data-aos="fade-in">
             & Developer
           </p>
-          <p className="text-smalltext text-base sm:text-lg lg:text-xl font-normal mt-4" data-aos="fade-in">
+          <p className="text-smalltext text-base sm:text-lg font-small lg:text-xl tracking-wider font-normal mt-4" data-aos="fade-in">
             Vikas, a passionate Developer studying final year BE at GM Institute of Technology
           </p>
         </div>
