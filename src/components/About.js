@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import AOS from "aos";
 import "aos/dist/aos.css"; 
 import { useEffect } from "react";
+import Letstalk from "./Letstalk";
 
 const socialmedia = [
   { icon: <FaInstagram />, name: "Instagram", link: "https://www.instagram.com/vikaaas_as?igsh=MWp5dHJ6MDRsZHhzYg==" },
@@ -102,6 +103,9 @@ const About = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <Letstalk/>
       </div>
       <div>
         <Helper />

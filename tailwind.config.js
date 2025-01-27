@@ -23,11 +23,16 @@ module.exports = {
       },
       animation: {
         slide: "slide 22s linear infinite",
+        marquee: "marquee 90s linear infinite"
       },
       keyframes: {
         slide: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" },
+        },
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" }
         },
       },
     },

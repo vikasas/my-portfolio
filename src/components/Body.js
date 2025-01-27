@@ -7,6 +7,7 @@ import NewHelper from './NewHelper';
 import AOS from "aos";
 import "aos/dist/aos.css"
 import { useEffect } from 'react';
+import Letstalk from './Letstalk';
 
 const Body = () => {
   useEffect(() => {
@@ -48,6 +49,10 @@ const Body = () => {
           <Projects />
         </div>
       </div>
+      <div>
+      <Letstalk/>
+      </div>
+      
       <div className="w-full ">
         <Helper />
       </div>
