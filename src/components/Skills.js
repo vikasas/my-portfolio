@@ -1,10 +1,13 @@
 import { FaJava } from "react-icons/fa";
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiTailwindcss, SiFigma, SiMysql } from "react-icons/si";
+import { SiHtml5, SiCss3, SiJavascript, SiReact, SiTailwindcss, SiFigma, SiMysql , SiNodedotjs , SiExpress , SiMongodb } from "react-icons/si";
 
 const skills = [
   { name: "Java", icon: <FaJava /> },
   { name: "JavaScript", icon: <SiJavascript /> },
   { name: "ReactJS", icon: <SiReact /> },
+  {name : "NodeJS" , icon : <SiNodedotjs /> },
+  {name : "ExpressJS" , icon : <SiExpress /> },
+  {name : "Mongodb" , icon : <SiMongodb /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss /> },
   { name: "Figma", icon: <SiFigma /> },
   { name: "Mysql", icon: <SiMysql/> },

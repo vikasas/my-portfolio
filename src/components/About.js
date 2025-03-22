@@ -73,11 +73,14 @@ const About = () => {
             <h6 className="text-smalltext">SKILLS</h6>
             <p className="mt-6 text-xl font-normal" data-aos="fade-in">Java</p> <hr className="border-skiltextcol mt-5" />
             <p className="mt-3 text-xl font-normal" data-aos="fade-in">DSA</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-3 text-xl font-normal" data-aos="fade-in">DBMS</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-3 text-xl font-normal" data-aos="fade-in">SQL</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-3 text-xl font-normal" data-aos="fade-in">HTML & CSS</p> <hr className="border-skiltextcol mt-3" />
             <p className="mt-3 text-xl font-normal" >JavaScript</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-3 text-xl font-normal" d>ReactJS</p> <hr className="border-skiltextcol mt-3" />
+            <p className="mt-6 text-xl font-normal" data-aos="fade-in">NodeJS</p> <hr className="border-skiltextcol mt-5" />
+            <p className="mt-6 text-xl font-normal" data-aos="fade-in">ExpressJS</p> <hr className="border-skiltextcol mt-5" />
+            <p className="mt-3 text-xl font-normal" >ReactJS</p> <hr className="border-skiltextcol mt-3" />
+            <p className="mt-6 text-xl font-normal" data-aos="fade-in">Mongodb</p> <hr className="border-skiltextcol mt-5" />
+            <p className="mt-3 text-xl font-normal" >DBMS</p> <hr className="border-skiltextcol mt-3" />
+            <p className="mt-3 text-xl font-normal" >SQL</p> <hr className="border-skiltextcol mt-3" />
+            <p className="mt-3 text-xl font-normal" >HTML & CSS</p> <hr className="border-skiltextcol mt-3" />
             <p className="mt-3 text-xl font-normal" >Tailwindcss</p> <hr className="border-skiltextcol mt-3" />
             <p className="mt-3 text-xl font-normal" >Web Design</p> 
             {/* <p className="mt-3 text-xl font-normal">SpringBoot</p> */}

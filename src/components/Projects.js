@@ -33,7 +33,7 @@ const project = [
 
 const Projects = () => { // Add this line to define the functional component properly
     useEffect(() =>{
-        AOS.init({duration:1200})
+        AOS.init({duration:1000})
     })
     return (
         <div>

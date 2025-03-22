@@ -41,7 +41,7 @@ const Contact = () => {
     <div>
       <div className="w-full bg-background text-beige flex flex-col lg:flex-row justify-center items-start p-5 sm:p-10 mt-10 space-y-10 lg:space-y-0">
         {/* Profile Image Section */}
-        <div className="w-full lg:w-1/3 flex justify-center items-center">
+        <div className="w-full lg:w-1/3 flex justify-center items-center lg:sticky top-10 ">
           <img
             src={pic}
             alt="Profile"
