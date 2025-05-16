@@ -8,10 +8,11 @@ import AOS from "aos";
 import "aos/dist/aos.css"
 import { useEffect } from 'react';
 import Letstalk from './Letstalk';
+import HomeProject from './HomeProject';
 
 const Body = () => {
   useEffect(() => {
-    AOS.init({duration:1200})
+    // AOS.init({duration:1200})
   })
   return (
     <div>
@@ -46,7 +47,8 @@ const Body = () => {
           <NewHelper />
         </div>
         <div className="w-full mt-12 ">
-          <Projects />
+          {/* <Projects /> */}
+          <HomeProject/>
         </div>
       </div>
       <div>

@@ -1,5 +1,5 @@
 import pic from "../pic2.png";
-import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaTwitter , FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import Helper from "./Helper";
 import Footer from "./Footer";
@@ -14,7 +14,7 @@ const socialmedia = [
   { icon: <FaTwitter />, name: "Twitter", link: "https://www.twitter.com" },
   { icon: <SiLeetcode />, name: "LeetCode", link: "https://leetcode.com/u/vikas_as18/" },
   { icon: "", name: "Resume", link: "" },
-  { icon: <FaInstagram />, name: "Instagram", link: "https://www.instagram.com/vikaaas_as?igsh=MWp5dHJ6MDRsZHhzYg==" },
+  { icon: <FaGithub />, name: "GitHub", link: "https://github.com/vikasas" },
 ];
 
 const About = () => {
@@ -74,12 +74,14 @@ const About = () => {
             <p className="mt-6 text-xl font-normal" data-aos="fade-in">Java</p> <hr className="border-skiltextcol mt-5" />
             <p className="mt-3 text-xl font-normal" data-aos="fade-in">DSA</p> <hr className="border-skiltextcol mt-3" />
             <p className="mt-3 text-xl font-normal" >JavaScript</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-6 text-xl font-normal" data-aos="fade-in">NodeJS</p> <hr className="border-skiltextcol mt-5" />
-            <p className="mt-6 text-xl font-normal" data-aos="fade-in">ExpressJS</p> <hr className="border-skiltextcol mt-5" />
+            <p className="mt-3 text-xl font-normal" data-aos="fade-in">TypeScript</p> <hr className="border-skiltextcol mt-3" />
+            <p className="mt-6 text-xl font-normal">NodeJS</p> <hr className="border-skiltextcol mt-5" />
+            <p className="mt-6 text-xl font-normal" >ExpressJS</p> <hr className="border-skiltextcol mt-5" />
+            <p className="mt-6 text-xl font-normal" >WebSocket</p> <hr className="border-skiltextcol mt-5" />
             <p className="mt-3 text-xl font-normal" >ReactJS</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-6 text-xl font-normal" data-aos="fade-in">Mongodb</p> <hr className="border-skiltextcol mt-5" />
+            <p className="mt-6 text-xl font-normal">Mongodb</p> <hr className="border-skiltextcol mt-5" />
+            <p className="mt-3 text-xl font-normal" >PostgreSQL</p> <hr className="border-skiltextcol mt-3" />
             <p className="mt-3 text-xl font-normal" >DBMS</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-3 text-xl font-normal" >SQL</p> <hr className="border-skiltextcol mt-3" />
             <p className="mt-3 text-xl font-normal" >HTML & CSS</p> <hr className="border-skiltextcol mt-3" />
             <p className="mt-3 text-xl font-normal" >Tailwindcss</p> <hr className="border-skiltextcol mt-3" />
             <p className="mt-3 text-xl font-normal" >Web Design</p> 
