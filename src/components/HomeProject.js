@@ -26,7 +26,7 @@ const HomeProject = () =>{
     },
     ]
     return(
-        <div className="w-full h-[80vh]">
+        <div className="w-full">
             <h6 className="text-beige font-ballet tracking-wide text-2xl">PROJECTS</h6>
             <div className="text-beige cursor-pointer flex justify-end hover:scale-100 transition-all duration-300 ease-in-in">
                 <Link to="/projects">
