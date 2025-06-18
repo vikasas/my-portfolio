@@ -37,7 +37,7 @@ const About = () => {
           <div className="mt-6 font-small text-base tracking-wider font-light leading-relaxed bg-container p-5 sm:p-10 border-2 border-bordercol">
             <p>
               Hi, I'm <strong>Vikas AS</strong>, a passionate and ambitious web developer currently in my final year at{" "}
-              <strong>GM Institute of Technology</strong>. With a CGPA of <strong>8.52</strong>, I have consistently
+              <strong>GM Institute of Technology</strong>. With a CGPA of <strong>8.7</strong>, I have consistently
               demonstrated dedication and a strong grasp of both academics and practical problem-solving.
             </p>
             <br />
@@ -92,7 +92,7 @@ const About = () => {
             <div className="flex flex-col gap-3 sm:gap-5">
               <div className="flex flex-col sm:flex-row justify-between mt-3">
                 <p className="text-xl font-normal" data-aos="fade-in">GM Institute of Technology</p>
-                <p className="text-xl font-normal" data-aos="fade-in">8.52 CGPA</p>
+                <p className="text-xl font-normal" data-aos="fade-in">8.7 CGPA</p>
               </div>
               <hr className="border-skiltextcol" />
               <div className="flex flex-col sm:flex-row justify-between mt-3">

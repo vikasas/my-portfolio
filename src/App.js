@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import { BrowserRouter as Router , Routes ,Route } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import  ScrollTop  from './components/ScrollTop';
+import { Toaster } from "react-hot-toast";
 
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
     <Router>
       <Header/>
       <ScrollTop/>
+      <div>
+          <Toaster position="top-center" reverseOrder={false} />
+        </div>
       <Routes>
         <Route path= "/"  element ={<Body/>}/>
         <Route path='"/'  element ={<Skills/>}/>

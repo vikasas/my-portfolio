@@ -7,6 +7,8 @@ import Footer from "./Footer";
 import AOS from "aos";
 import "aos/dist/aos.css"; 
 import { useEffect } from "react";
+import toast from "react-hot-toast";
+
 
 const socialmedia = [
   { icon: <FaInstagram />, name: "Instagram", link: "https://www.instagram.com/vikaaas_as?igsh=MWp5dHJ6MDRsZHhzYg==" },
@@ -16,7 +18,9 @@ const socialmedia = [
   { icon: "", name: "Resume", link: "https://drive.google.com/file/d/1nnSpeaRhUcitkpSwF6gHnDlzcSywHOll/view?usp=drivesdk" },
 ];
 
+
 const Contact = () => {
+
   const form = useRef();
   useEffect(() => {
     AOS.init({duration:1200})
@@ -29,10 +33,12 @@ const Contact = () => {
       .sendForm("service_m53wxgs", "template_i3pq006", form.current, "tJzIypbSfU0kzdNXp")
       .then(
         () => {
-          alert("Message sent successfully!");
+          toast.success("Message sent successfully!");
+          form.current.reset();
+          
         },
         (error) => {
-          alert("Message failed to send: " + error.text);
+          toast.error("Message failed to send: " + error.text);
         }
       );
   };
