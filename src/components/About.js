@@ -13,7 +13,7 @@ const socialmedia = [
   { icon: <FaLinkedin />, name: "LinkedIn", link: "https://www.linkedin.com/in/vikas-as-006128284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
   { icon: <FaTwitter />, name: "Twitter", link: "https://www.twitter.com" },
   { icon: <SiLeetcode />, name: "LeetCode", link: "https://leetcode.com/u/vikas_as18/" },
-  { icon: "", name: "Resume", link: "" },
+  { icon: "", name: "Resume", link: "https://drive.google.com/file/d/1nnSpeaRhUcitkpSwF6gHnDlzcSywHOll/view?usp=drivesdk" },
   { icon: <FaGithub />, name: "GitHub", link: "https://github.com/vikasas" },
 ];
 

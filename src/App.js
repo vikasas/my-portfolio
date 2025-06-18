@@ -8,6 +8,8 @@ import Practice from './components/Practice';
 import Contact from './components/Contact';
 import { BrowserRouter as Router , Routes ,Route } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import  ScrollTop  from './components/ScrollTop';
+
 
 function App() {
   const [visible , Setvisible] = useState(true);
@@ -22,6 +24,7 @@ function App() {
   return (
     <Router>
       <Header/>
+      <ScrollTop/>
       <Routes>
         <Route path= "/"  element ={<Body/>}/>
         <Route path='"/'  element ={<Skills/>}/>

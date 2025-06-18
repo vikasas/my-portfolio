@@ -10,7 +10,7 @@ const HomeProject = () =>{
         photo: brain,
         name: "Second Brain",
         stacks: "Tech Stacks: Nodejs , Expressjs , Mongodb , ReactJS, TailwindCSS",
-        link: " "
+        link: "https://second-brain-frontend-alpha.vercel.app/"
     },
      {
         photo: chatroom,
