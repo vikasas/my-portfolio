@@ -1,5 +1,5 @@
-"use client"
 
+import { Link } from "react-router-dom"
 import { useState, useEffect, useRef } from "react"
 
 const Helper = () => {
@@ -21,10 +21,11 @@ const Helper = () => {
           speed={100}
           delay={3000}
         />
-
+      <Link to="/contact" >
         <button className="mt-6 bg-btnbg hover:opacity-80 px-8 py-4 font-medium text-btntextcol rounded-lg transition-colors duration-300">
           GET IN TOUCH
         </button>
+        </Link>
       </div>
     </div>
   )

@@ -88,7 +88,7 @@ function TiltCard({ service }) {
         rotateX: rotateX,
         transformStyle: "preserve-3d",
       }}
-      className="bg-container border border-bordercol mt-3 p-10 md:p-14 lg:p-10 rounded-lg cursor-pointer"
+      className="bg-container w-full  border border-bordercol mt-3 p-10 md:p-14 lg:p-10 rounded-lg cursor-pointer"
       whileHover={{
         scale: 1.05,
         boxShadow: "0px 0px 8px rgb(237, 214, 182)",
