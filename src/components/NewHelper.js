@@ -27,7 +27,7 @@ const NewHelper = () => {
       <h6 className="text-2xl font-serif tracking-wide lg:text-start md:text-start text-center text-beige mb-8">
         INTERESTS
       </h6>
-      <motion.div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6">
+      <motion.div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-8 w-full">
         {service.map((serv, index) => (
           <TiltCard key={index} service={serv} />
         ))}
@@ -88,7 +88,7 @@ function TiltCard({ service }) {
         rotateX: rotateX,
         transformStyle: "preserve-3d",
       }}
-      className="bg-container w-full  border border-bordercol mt-3 p-10 md:p-14 lg:p-10 rounded-lg cursor-pointer"
+      className="bg-container w-full border border-bordercol mt-3 px-5 py-6 sm:px-6 sm:py-8 md:px-10 md:py-10 rounded-lg cursor-pointer"
       whileHover={{
         scale: 1.05,
         boxShadow: "0px 0px 8px rgb(237, 214, 182)",
