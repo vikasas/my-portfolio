@@ -1,89 +1,83 @@
-import { motion, useSpring, useTransform, useMotionValue } from "framer-motion";
-import { useEffect } from "react";
+import { motion, useSpring, useTransform, useMotionValue } from "framer-motion"
+import { useEffect } from "react"
 
-export default function LiquidLoader({
-  text = "LOADING",
-  onComplete,
-  duration = 3000,
-  pauseDuration = 500,
-}) {
-  const progress = useMotionValue(0);
+export default function LiquidLoader({ text = "LOADING", onComplete, duration = 3000, pauseDuration = 500 }) {
+  // Motion value for progress (0 to 100)
+  const progress = useMotionValue(0)
 
+  // Spring animation for smooth progress updates
   const springProgress = useSpring(progress, {
     stiffness: 100,
     damping: 30,
     restDelta: 0.001,
-  });
+  })
 
-  const fillWidth = useTransform(springProgress, [0, 100], ["0%", "100%"]);
-  const fillOpacity = useTransform(springProgress, [0, 20, 100], [0.3, 1, 1]);
+  // Transform progress to width percentage
+  const fillWidth = useTransform(springProgress, [0, 100], ["0%", "100%"])
+
+  // Transform progress to opacity for subtle fade effect
+  const fillOpacity = useTransform(springProgress, [0, 20, 100], [0.3, 1, 1])
 
   useEffect(() => {
-    let currentProgress = 0;
-    let isAnimating = false;
+    let currentProgress = 0
+    let isAnimating = false
 
     const animateProgress = () => {
-      if (isAnimating) return;
-      isAnimating = true;
+      if (isAnimating) return
+      isAnimating = true
 
-      const pause = Math.random() * pauseDuration + 200;
+      // Random pause between flows
+      const pause = Math.random() * pauseDuration + 200
 
       setTimeout(() => {
-        const flowAmount = Math.random() * 25 + 10;
-        const targetProgress = Math.min(currentProgress + flowAmount, 100);
+        const flowAmount = Math.random() * 25 + 10
+        const targetProgress = Math.min(currentProgress + flowAmount, 100)
 
-        progress.set(targetProgress);
-        currentProgress = targetProgress;
+        progress.set(targetProgress)
+        currentProgress = targetProgress
 
         if (currentProgress >= 100) {
           setTimeout(() => {
-            if (onComplete) onComplete();
+            if (onComplete) onComplete()
             setTimeout(() => {
-              currentProgress = 0;
-              progress.set(0);
-              isAnimating = false;
-              animateProgress();
-            }, 1500);
-          }, 500);
+              currentProgress = 0
+              progress.set(0)
+              isAnimating = false
+              animateProgress()
+            }, 1500)
+          }, 500)
         } else {
           setTimeout(() => {
-            isAnimating = false;
-            animateProgress();
-          }, 100);
+            isAnimating = false
+            animateProgress()
+          }, 100)
         }
-      }, pause);
-    };
+      }, pause)
+    }
 
-    animateProgress();
-  }, [progress, onComplete, pauseDuration]);
+    animateProgress()
+  }, [progress, onComplete, pauseDuration])
 
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center p-4">
-      <div className="relative inline-block w-full text-center max-w-[90vw]">
+    <div className="min-h-screen bg-background flex items-center justify-center">
+      <div className="relative inline-block">
         {/* Background text */}
         <motion.div
-          className="font-black tracking-wider select-none text-[12vw] sm:text-6xl md:text-8xl lg:text-9xl text-gray-700"
+          className="lg:text-9xl md:text-8xl text-6xl font-black text-gray-700 tracking-wider select-none"
           initial={{ opacity: 0.5 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
           {text}
         </motion.div>
-
-        {/* Animated fill overlay */}
-        <motion.div
-          className="absolute top-0 left-0 overflow-hidden"
-          style={{ width: fillWidth }}
-        >
+        <motion.div className="absolute top-0 left-0 overflow-hidden" style={{ width: fillWidth }}>
           <motion.div
-            className="font-black whitespace-nowrap tracking-wider drop-shadow-lg select-none text-[12vw] sm:text-6xl md:text-8xl lg:text-9xl text-smalltext"
+            className="lg:text-9xl md:text-8xl text-6xl  font-black whitespace-nowrap text-smalltext tracking-wider drop-shadow-lg select-none"
             style={{ opacity: fillOpacity }}
           >
             {text}
           </motion.div>
         </motion.div>
-
-        {/* Liquid surface effect */}
         <motion.div
           className="absolute top-0 w-1 h-full bg-gradient-to-b from-transparent via-beige to-transparent"
           style={{
@@ -102,5 +96,5 @@ export default function LiquidLoader({
         />
       </div>
     </div>
-  );
+  )
 }
