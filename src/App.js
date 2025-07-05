@@ -1,44 +1,47 @@
+import { useEffect, useState } from 'react';
 import Header from './components/Header';
 import Body from './components/Body';
-import './App.css';
 import Skills from './components/Skills';
-import About from './components/About'
+import About from './components/About';
 import Projects from './components/Projects';
 import Practice from './components/Practice';
 import Contact from './components/Contact';
-import { BrowserRouter as Router , Routes ,Route } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-import  ScrollTop  from './components/ScrollTop';
+import ScrollTop from './components/ScrollTop';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Toaster } from "react-hot-toast";
-
+import LiquidLoader from './components/LiquidLoader'; // if using loader
+import './App.css';
 
 function App() {
-  const [visible , Setvisible] = useState(true);
-  useEffect(function(){
-    const time = setInterval(function(){
-      Setvisible(c => !c);
-    },5000)
-    return function(){
-      clearInterval(time);
-    }
-  },[])
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Show loading for a fixed duration or use actual progress (see loader logic)
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 3500); // 3.5 seconds
+
+    return () => clearTimeout(timeout);
+  }, []);
+
+  if (loading) return <LiquidLoader onComplete={() => setLoading(false)} />;
+
   return (
     <Router>
-      <Header/>
-      <ScrollTop/>
+      <Header />
+      <ScrollTop />
       <div>
-          <Toaster position="top-center" reverseOrder={false} />
-        </div>
+        <Toaster position="top-center" reverseOrder={false} />
+      </div>
       <Routes>
-        <Route path= "/"  element ={<Body/>}/>
-        <Route path='"/'  element ={<Skills/>}/>
-        <Route path ='/about' element = {<About/>}/>
-        <Route path = "/projects" element ={<Projects/>} />
-        <Route path="/contact" element ={<Contact/>} />
-        <Route path = "/practice" element ={ <Practice/>}/>
+        <Route path="/" element={<Body />} />
+        <Route path="/" element={<Skills />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/practice" element={<Practice />} />
       </Routes>
     </Router>
-    
   );
 }
 

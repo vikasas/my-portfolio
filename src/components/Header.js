@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { Link } from "react-router-dom";
-import AOS from "aos"
-import "aos/dist/aos.css"
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -9,14 +8,16 @@ const Header = () => {
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
-  useEffect(() => {
-    AOS.init({duration:2000})
-  })
+ 
   return (
-    <div className="flex sticky top-0 justify-center z-50">
+    <motion.div className="flex sticky top-0 justify-center z-50"
+    initial={{y:'-100vh'}}
+    animate={{y:0}}
+    transition={{delay : 0.3 , type:'spring' , stiffness:70 }}
+    >
       <div className="flex  w-11/12 md:w-2/3 lg:w-1/3 z-20 h-16 justify-between md:justify-center items-center gap-x-8 md:bg-navbg  lg:bg-navbg mt-8 md:border-2 md:border-bordercol lg:border-2 lg:border-bordercol ">
         <div>
-          <p className="text-beige font-name hidden md:block  text-xl cursor-pointer" data-aos="fade-in">
+          <p className="text-beige font-name hidden md:block  text-xl cursor-pointer" >
             <Link to="/">Vikas.</Link>
           </p>
         </div>
@@ -50,7 +51,6 @@ const Header = () => {
           </ul>
         </div>
 
-        {/* Mobile Menu Button */}
         <div className="block md:hidden">
           <button
             onClick={toggleMobileMenu}
@@ -61,7 +61,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Dropdown Menu */}
       {isMobileMenuOpen && (
         <div className="bg-navbg w-full h-screen absolute  left-0 z-30 border-t-2 border-bordercol">
           <ul className="flex flex-col items-center py-4 space-y-4">
@@ -90,7 +89,7 @@ const Header = () => {
           </ul>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
 

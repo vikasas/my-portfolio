@@ -1,6 +1,5 @@
 import brain from "../brain.jpg"
-import chatroom from "../chatroom.jpg"
-import todo from "../todo.jpg"
+
 import { More } from "../icons/More"
 import { Link } from "react-router-dom"
 
@@ -13,13 +12,13 @@ const HomeProject = () =>{
         link: "https://second-brain-frontend-alpha.vercel.app/"
     },
      {
-        photo: chatroom,
+        photo: "",
         name: "ChatRoom",
         stacks: "Tech Stacks: Nodejs , Websocket , ReactJS, TailwindCSS",
         link: "https://chat-room-frontennd.vercel.app/"
     },
     {
-        photo: todo,
+        photo: "",
         name: "TO-Do List",
         stacks: "Tech Stacks: ReactJs , JavaScript , Nodejs, Expressjs ,Jwt",
         link:" "

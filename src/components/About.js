@@ -7,6 +7,8 @@ import AOS from "aos";
 import "aos/dist/aos.css"; 
 import { useEffect } from "react";
 import Letstalk from "./Letstalk";
+import Ski from "./Ski";
+import { motion } from "framer-motion";
 
 const socialmedia = [
   { icon: <FaInstagram />, name: "Instagram", link: "https://www.instagram.com/vikaaas_as?igsh=MWp5dHJ6MDRsZHhzYg==" },
@@ -69,23 +71,8 @@ const About = () => {
             </div>
           </div>
 
-          <div className="overflow-y-scroll font-small tracking-wide h-60 sm:h-60 lg:h-80 cursor-pointer mt-4 font-normal text-base leading-relaxed bg-container p-5 sm:p-10 border-2 border-bordercol">
-            <h6 className="text-smalltext">SKILLS</h6>
-            <p className="mt-6 text-xl font-normal" data-aos="fade-in">Java</p> <hr className="border-skiltextcol mt-5" />
-            <p className="mt-3 text-xl font-normal" data-aos="fade-in">DSA</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-3 text-xl font-normal" >JavaScript</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-3 text-xl font-normal" data-aos="fade-in">TypeScript</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-6 text-xl font-normal">NodeJS</p> <hr className="border-skiltextcol mt-5" />
-            <p className="mt-6 text-xl font-normal" >ExpressJS</p> <hr className="border-skiltextcol mt-5" />
-            <p className="mt-6 text-xl font-normal" >WebSocket</p> <hr className="border-skiltextcol mt-5" />
-            <p className="mt-3 text-xl font-normal" >ReactJS</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-6 text-xl font-normal">Mongodb</p> <hr className="border-skiltextcol mt-5" />
-            <p className="mt-3 text-xl font-normal" >PostgreSQL</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-3 text-xl font-normal" >DBMS</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-3 text-xl font-normal" >HTML & CSS</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-3 text-xl font-normal" >Tailwindcss</p> <hr className="border-skiltextcol mt-3" />
-            <p className="mt-3 text-xl font-normal" >Web Design</p> 
-            {/* <p className="mt-3 text-xl font-normal">SpringBoot</p> */}
+          <div className="mt-4">
+            <Ski/>
           </div>
           <div className="cursor-pointer mt-4 font-small tracking-wide text-base leading-relaxed bg-container p-5 sm:p-10 border-2 border-bordercol">
             <h6 className="text-smalltext">Education</h6>
