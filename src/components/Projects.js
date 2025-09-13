@@ -24,7 +24,7 @@ const projects = [
       <SiReact className="text-2xl" />
     ],
     dis: "A Second Brain is a digital system for capturing, organizing, and retrieving your ideas, notes, and inspirations. It can include curated resources like insightful YouTube videos and Twitter threads, helping you build a personal knowledge hub accessible anytime.",
-    link: "https://second-brain-frontend-alpha.vercel.app/",
+    link: "https://brainly-frontend-ten.vercel.app/",
     icons: <SiGithub className="text-2xl cursor-pointer" />
   },
   {
@@ -110,7 +110,6 @@ function ProjectSection({ project, index }) {
       </div>
       <motion.div
         className="project-info"
-        // Hide until scroll progress is measured
         initial={{ visibility: "hidden" }}
         animate={{ visibility: "visible" }}
         style={{ y }}
@@ -155,9 +154,7 @@ export default function Projects() {
   )
 }
 
-/**
- * ==============   Styles   ================
- */
+
 
 function StyleSheet() {
   return (

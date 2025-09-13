@@ -12,14 +12,15 @@ import { Toaster } from "react-hot-toast";
 import LiquidLoader from './components/LiquidLoader'; // if using loader
 import './App.css';
 
+
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Show loading for a fixed duration or use actual progress (see loader logic)
+   
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 3500); // 3.5 seconds
+    }, 3500); 
 
     return () => clearTimeout(timeout);
   }, []);
@@ -28,7 +29,6 @@ function App() {
 
   return (
     <Router>
-      <Header />
       <ScrollTop />
       <div>
         <Toaster position="top-center" reverseOrder={false} />
