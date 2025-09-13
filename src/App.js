@@ -29,6 +29,7 @@ function App() {
 
   return (
     <Router>
+      <Header />
       <ScrollTop />
       <div>
         <Toaster position="top-center" reverseOrder={false} />
